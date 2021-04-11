@@ -5,14 +5,15 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './styles/app.scss';
 import Search from './components/Search/Search';
+import Results from './components/Results/Results';
 
 
 function App() {
   return (
     <div className="App">
       <Search />
-      <Container>
-        
+      <Container className="results__container">
+        <Results />
       </Container>
     </div>
   );

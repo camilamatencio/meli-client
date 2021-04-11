@@ -1,7 +1,8 @@
 @import './variables.scss';
 @import './main.scss';
 @import '../components/Search/Search.scss';
+@import '../components/Results/Results.scss';
 
-.App {
-    background-color: $color-light-grey;
+.results__container {
+    background-color: $color-white;
 }

@@ -1,0 +1,34 @@
+@import '../../styles/variables';
+
+.results__row {
+    padding: $spacing-16;
+}
+
+.results__col1 {
+    padding: 0;
+}
+
+.results__col2 {
+    margin-top: $spacing-16
+}
+
+.results__col3 {
+    margin-top: $spacing-16
+}
+
+.results__image {
+    @include roundedImage;
+}
+
+.results__price {
+    font-size: $font-24;
+    margin-bottom: $spacing-32;
+}
+
+.results__detail {
+    font-size: $font-18;
+}
+
+.results__city {
+    font-size: $font-12;
+}

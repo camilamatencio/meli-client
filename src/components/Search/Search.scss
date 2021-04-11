@@ -23,6 +23,10 @@ input[type="search"]::-webkit-search-results-decoration {
     width: calc(100% - 35px);
     outline: none;
     padding-left: 10px;
+
+    &::placeholder {
+        color: $color-grey;
+      }
 }
 
 .search__button {

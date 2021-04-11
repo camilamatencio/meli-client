@@ -5,6 +5,7 @@ $color-grey: #979797;
 $color-light-grey: #eeeeee;
 $color-blue: #5483fa;
 $color-yellow: #f9e50f;
+$color-white: #ffffff;
 
 $font-12: 12px;
 $font-14: 14px;
@@ -17,7 +18,7 @@ $font-46: 46px;
 $spacing-16: 16px;
 $spacing-32: 32px;
 
-@mixin rounded-image {
+@mixin roundedImage {
     width: 180px;
     height: 180px;
     border-radius: 4px;
