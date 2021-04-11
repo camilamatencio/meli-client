@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+.nav__search {
+    background-color: $color-yellow;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    font-size: $font-16;
+}
+
+.search__box {
+    margin: 0 auto;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    height: 35px;
+    width: calc(100% - 35px);
+    outline: none;
+    padding-left: 10px;
+}
+
+.search__button {
+    background: $color-light-grey;
+    position: absolute;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    height: 35px;
+    width: 35px;
+}
+
+.search__logo {
+    height: 35px;
+}

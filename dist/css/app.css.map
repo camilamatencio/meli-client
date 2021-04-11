@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,IAAI,CAAC;EACD,gBAAgB,ECDD,OAAO;CDEzB",
+    "sources": [
+        "../../src/styles/app.scss",
+        "../../src/styles/variables.scss",
+        "../../src/styles/main.scss",
+        "../../src/components/Search/Search.scss",
+        "../../src/styles/variables.scss"
+    ],
+    "names": [],
+    "file": "app.css"
+}

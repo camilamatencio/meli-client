@@ -1,0 +1,30 @@
+$color-yellow: #f9e50f;
+$color-dark-grey: #363636;
+$color-medium-grey: #666666;
+$color-grey: #979797;
+$color-light-grey: #eeeeee;
+$color-blue: #5483fa;
+$color-yellow: #f9e50f;
+
+$font-12: 12px;
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$font-24: 24px;
+$font-28: 28px;
+$font-46: 46px;
+
+$spacing-16: 16px;
+$spacing-32: 32px;
+
+@mixin rounded-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+}
+
+@mixin big-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 680px;
+}
