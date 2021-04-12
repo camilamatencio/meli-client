@@ -1,10 +1,9 @@
-$color-yellow: #f9e50f;
-$color-dark-grey: #363636;
+$color-yellow: #ffe600;
+$color-dark-grey: #333333;
 $color-medium-grey: #666666;
-$color-grey: #979797;
+$color-grey: #999999;
 $color-light-grey: #eeeeee;
-$color-blue: #5483fa;
-$color-yellow: #f9e50f;
+$color-blue: #3483FA;
 $color-white: #ffffff;
 
 $font-12: 12px;
@@ -24,8 +23,16 @@ $spacing-32: 32px;
     border-radius: 4px;
 }
 
-@mixin big-image {
+@mixin bigImage {
+    margin: auto;
     display: block;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
     max-width: 680px;
+}
+
+@mixin container {
+    background-color: $color-white;
+    border-radius: 4px;
+    margin-bottom: 64px;
 }

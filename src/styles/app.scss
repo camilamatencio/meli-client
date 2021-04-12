@@ -2,7 +2,8 @@
 @import './main.scss';
 @import '../components/Search/Search.scss';
 @import '../components/Results/Results.scss';
+@import '../components/Product/Product.scss';
 
 .results__container {
-    background-color: $color-white;
+    @include container;
 }
