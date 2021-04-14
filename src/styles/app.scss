@@ -3,6 +3,7 @@
 @import '../components/Search/Search.scss';
 @import '../components/Results/Results.scss';
 @import '../components/Product/Product.scss';
+@import '../components/Breadcrumbs/Breadcrumbs.scss';
 
 .results__container {
     @include container;

@@ -4,7 +4,8 @@ import Container from 'react-bootstrap/Container';
 import './styles/app.scss';
 import Search from './components/Search/Search';
 import Results from './components/Results/Results';
-import Product from './components/Product/Product';
+import Product from './components/Product/Product'; 
+import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs'; 
 
 class App extends React.Component {
   constructor(props) {
@@ -27,14 +28,13 @@ class App extends React.Component {
     return (
       <div className="App">
         <Search />
-        {/* 
+        <Breadcrumbs />
         <Container className="results__container">
           <Results />
           <Results />
           <Results />
           <Results />        
         </Container>
-        */}
         <Product />
         <p>{this.state.apiResponse}</p>
       </div>
