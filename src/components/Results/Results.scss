@@ -32,3 +32,13 @@
 .results__city {
     font-size: $font-12;
 }
+
+.results__link {
+    color: $color-dark-grey;
+}
+
+.results__link:hover {
+    color: $color-dark-grey;
+    text-decoration: none;
+    
+}

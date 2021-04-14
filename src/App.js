@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import './styles/app.scss';
@@ -27,15 +28,23 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Search />
-        <Breadcrumbs />
-        <Container className="results__container">
-          <Results />
-          <Results />
-          <Results />
-          <Results />        
-        </Container>
-        <Product />
+        <Route path='/'>
+          <Search />
+        </Route>
+        <Route path='/items' exact>
+          <Breadcrumbs />
+          <Container className="results__container">
+            <Results />
+            <Results />
+            <Results />
+            <Results />
+          </Container>          
+        </Route>
+        <Route path='/items/:id'>
+          <Breadcrumbs />
+          <Product />          
+        </Route>
+
         <p>{this.state.apiResponse}</p>
       </div>
     );
