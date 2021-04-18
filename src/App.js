@@ -40,7 +40,7 @@ class App extends React.Component {
             <Results />
           </Container>          
         </Route>
-        <Route path='/items/:id'>
+        <Route path='/items/:id' exact>
           <Breadcrumbs />
           <Product />          
         </Route>
