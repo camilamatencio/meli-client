@@ -5,20 +5,17 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ejemplo1 from '../../assets/ejemplos/ejemplo1.jpg';
+import axios from 'axios';
 
 class Results extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
-    callAPI() {
+      componentDidMount() {
         const splitSearch = window.location.search.split('=')
         const query = splitSearch[1];
-        fetch(`http://localhost:9000/api/items?q=${query}`)
-      }
-    
-      componentDidMount() {
-        this.callAPI();
+        axios.get(`http://localhost:9000/api/items?q=${query}`)
+        .then(response => {
+            console.log(response)
+        })
       }
 
     render () {
