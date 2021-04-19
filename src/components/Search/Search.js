@@ -21,7 +21,7 @@ class Search extends React.Component {
 
     searchProduct() {
     const query = document.querySelector('.search__box').value;
-    window.location = `/items?q=${query}`;
+    window.location = `/items?search=${query}`;
     console.log(query)
     }
 

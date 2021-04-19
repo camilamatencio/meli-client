@@ -1,5 +1,9 @@
 @import '../../styles/variables';
 
+.results__container {
+    @include container;
+}
+
 .results__row {
     padding: $spacing-16;
 }

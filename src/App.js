@@ -33,12 +33,7 @@ class App extends React.Component {
         </Route>
         <Route path='/items' exact>
           <Breadcrumbs />
-          <Container className="results__container">
-            <Results />
-            <Results />
-            <Results />
-            <Results />
-          </Container>          
+          <Results />
         </Route>
         <Route path='/items/:id' exact>
           <Breadcrumbs />
