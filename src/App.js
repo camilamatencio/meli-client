@@ -32,11 +32,9 @@ class App extends React.Component {
           <Search />
         </Route>
         <Route path='/items' exact>
-          <Breadcrumbs />
           <Results />
         </Route>
         <Route path='/items/:id' exact>
-          <Breadcrumbs />
           <Product />          
         </Route>
 
