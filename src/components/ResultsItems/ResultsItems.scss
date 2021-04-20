@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+
+.results__row {
+    padding: $spacing-16;
+}
+
+.results__col1 {
+    padding: 0;
+}
+
+.results__col2 {
+    margin-top: $spacing-16
+}
+
+.results__col3 {
+    margin-top: $spacing-16
+}
+
+.results__image {
+    @include roundedImage;
+}
+
+.shipping__image {
+    vertical-align: inherit;
+    margin-left: 10px;
+}
+
+.results__price {
+    font-size: $font-24;
+    margin-bottom: $spacing-32;
+}
+
+.results__city {
+    font-size: $font-12;
+}
+
+.results__link {
+    color: $color-dark-grey;
+}
+
+.results__link:hover {
+    color: $color-dark-grey;
+    text-decoration: none;
+    
+}

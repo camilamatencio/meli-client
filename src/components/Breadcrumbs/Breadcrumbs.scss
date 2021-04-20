@@ -1,17 +1,5 @@
 @import '../../styles/variables';
 
-.breadcrumbs__container {
-    padding: 0;
-}
-
-.breadcrumbs__ul {
-    font-size: $font-14;
-    color: $color-grey;
-    margin: $spacing-16 0px;
-    padding: 0;
-
-}
-
 .breadcrumbs__li {
     display: inline;
 }

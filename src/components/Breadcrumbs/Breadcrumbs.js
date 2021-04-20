@@ -7,18 +7,7 @@ import Col from 'react-bootstrap/Col';
 class Breadcrumbs extends React.Component {
     render () {
         return (
-            <Container className="breadcrumbs__container">
-                <Row>
-                    <Col>
-                        <ul className="breadcrumbs__ul">
-                            <li className="breadcrumbs__li">Electronica, audio y video</li>
-                            <li className="breadcrumbs__li">Iphone</li>
-                            <li className="breadcrumbs__li">Celulares</li>
-                            <li className="breadcrumbs__li">32 GB</li>
-                        </ul>
-                    </Col>
-                </Row>
-            </Container>
+            <li className="breadcrumbs__li">{this.props.name}</li>
         );
     };
 };
