@@ -19,7 +19,7 @@ class Results extends React.Component {
 
 
     componentDidMount() {
-        const splitSearch = window.location.search.split('=')
+        const splitSearch = window.location.search.split('=');
         const query = splitSearch[1];
         axios.get(`http://localhost:9000/api/items?q=${query}`)
         .then(response => {
