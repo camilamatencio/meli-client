@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+
+.not_found__container {
+    margin-top: $spacing-32;
+    h1 {
+        font-size: $font-18;
+        animation: cssAnimation 0s 2s forwards;
+        visibility: hidden;
+    }
+    @keyframes cssAnimation {
+        to   { visibility: visible; }
+      }
+}

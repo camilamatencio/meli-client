@@ -1,12 +1,10 @@
 import React from 'react';
 import ResultsItems from '../ResultsItems/ResultsItems';
-import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import axios from 'axios';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
+import NotFound from '../NotFound/NotFound';
 
 class Results extends React.Component {
     constructor(props) {
@@ -15,8 +13,7 @@ class Results extends React.Component {
             items: [],
             categories: []
         }
-      }
-
+    }
 
     componentDidMount() {
         const splitSearch = window.location.search.split('=');
@@ -27,7 +24,6 @@ class Results extends React.Component {
                 items: response.data.items,
                 categories: response.data.categories
             });
-            console.log(response)
         })
     }
 
@@ -43,14 +39,13 @@ class Results extends React.Component {
                 <Container className="breadcrumbs__container">
                 <ul className="breadcrumbs__ul">
                     {categories}
+                    {this.state.items.length === 0 ? <NotFound /> : ""}
                 </ul>
                 </Container>
                 <Container className="results__container">
                     {items}  
                 </Container>                
             </Container>
-
-            
         );
     };
 };

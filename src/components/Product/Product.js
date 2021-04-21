@@ -49,7 +49,7 @@ class Product extends React.Component {
                 <Container className="product__container">
                     <Row className="product__row1">
                         <Col className="product__col1"  md={9}>
-                            <img className="product__image" src={this.state.item.picture} alt=""/>
+                            <img className="product__image" src={this.state.item.picture} alt={this.state.item.title}/>
                         </Col>
                         <Col className="product__col2"  md={3}>
                             <p className="product__p">{this.state.item.condition === 'new' ? 'Nuevo' : 'Usado'} - {this.state.item.sold_quantity} vendidos</p>
@@ -66,7 +66,6 @@ class Product extends React.Component {
                     </Row>            
                 </Container>                
             </Container>
-
         );        
     };
 };
