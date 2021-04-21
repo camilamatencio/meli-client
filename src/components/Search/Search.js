@@ -20,9 +20,14 @@ class Search extends React.Component {
       }
 
     searchProduct() {
-    const query = document.querySelector('.search__box').value;
-    window.location = `/items?search=${query}`;
-    console.log(query)
+        const query = document.querySelector('.search__box').value;
+        if (query.includes("MLA")) {
+            window.location = `/items/${query}`;
+        } else {
+        window.location = `/items?search=${query}`;            
+        }
+
+        console.log(query)
     }
 
     render () {

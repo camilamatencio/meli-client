@@ -28,16 +28,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Route path='/'>
-          <Search />
-        </Route>
-        <Route path='/items' exact>
-          <Results />
-        </Route>
-        <Route path='/items/:id' exact>
-          <Product />          
-        </Route>
-
+        <Route path='/' component={Search} />
+        <Route path='/items' exact component={Results} />
+        <Route path='/items/:id' exact component={Product} />
         <p>{this.state.apiResponse}</p>
       </div>
     );
