@@ -7,6 +7,7 @@ import Search from './components/Search/Search';
 import Results from './components/Results/Results';
 import Product from './components/Product/Product'; 
 import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs'; 
+import NotFound from './components/NotFound/NotFound'
 
 class App extends React.Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class App extends React.Component {
         <Route path='/' component={Search} />
         <Route path='/items' exact component={Results} />
         <Route path='/items/:id' exact component={Product} />
+        <Route path='/not_found' exact component={NotFound}/>
         <p>{this.state.apiResponse}</p>
       </div>
     );

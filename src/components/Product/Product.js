@@ -52,7 +52,7 @@ class Product extends React.Component {
                             <img className="product__image" src={this.state.item.picture} alt=""/>
                         </Col>
                         <Col className="product__col2"  md={3}>
-                            <p className="product__p">{this.state.item.condition} - {this.state.item.sold_quantity} vendidos</p>
+                            <p className="product__p">{this.state.item.condition === 'new' ? 'Nuevo' : 'Usado'} - {this.state.item.sold_quantity} vendidos</p>
                             <h1 className="product__title"><strong>{this.state.item.title}</strong></h1>
                             <h2 className="product__price">$ {this.state.price.amount}</h2>
                             <button className="product__button">Comprar</button>
