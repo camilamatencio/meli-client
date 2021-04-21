@@ -4,6 +4,10 @@
     @include container;
 }
 
+.breadcrumbs__container {
+    padding: 0;
+}
+
 .product__row1 {
     padding-top: $spacing-32
 }
